@@ -30,7 +30,7 @@ export const Name = ({ claim, setAbout, client }) => {
     const labelText = !hasFile ? 'Set Profile Picture' : 'Change';
     return (
         <div className="claim">
-            {about && <img src={about} width={100} alt="profile" className="profile-image" />}
+            {about && <img src={about} width={100} alt="profile" className="profile-image" title={about} />}
             <div>
                 <h2>{resolvedName}.MUD</h2>
                 <p>{owner}</p>
