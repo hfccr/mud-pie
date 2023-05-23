@@ -7,7 +7,7 @@ const client = new Web3Storage({ token });
 
 export const Names = ({ mudPie, setAbout }) => {
   return (
-    <div>
+    <div className="registry">
       <h1>Registry</h1>
       <ul>
         {mudPie.map((claim, index) => (

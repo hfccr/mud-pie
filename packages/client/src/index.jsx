@@ -3,6 +3,9 @@ import { mount as mountDevTools } from "@latticexyz/dev-tools";
 import { App } from "./App";
 import { setup } from "./mud/setup";
 import { MUDProvider } from "./MUDContext";
+import "@fontsource/monofett"
+import "@fontsource/homemade-apple"
+import "@fontsource/silkscreen"
 
 const rootElement = document.getElementById("react-root");
 if (!rootElement) throw new Error("React root not found");

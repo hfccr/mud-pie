@@ -3,7 +3,7 @@ import { useMUD } from "./MUDContext";
 import { useState } from 'react';
 import { utils } from 'ethers';
 import { Names } from './Names';
-
+import { Header } from './Header';
 export const App = () => {
   const {
     components: { Counter },
@@ -27,8 +27,9 @@ export const App = () => {
   };
   return (
     <>
-      <form onSubmit={submit}>
-        <input value={value} onChange={onChange} />
+      <Header />
+      <form onSubmit={submit} class="claim-form">
+        <input value={value} onChange={onChange} type="text" />
         <button type="submit">Claim</button>
       </form>
       <Names mudPie={mudPie} setAbout={setAbout} />

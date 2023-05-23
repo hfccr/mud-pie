@@ -13,6 +13,9 @@
   },
   "dependencies": {
     "@ethersproject/providers": "^5.7.2",
+    "@fontsource/homemade-apple": "^5.0.1",
+    "@fontsource/monofett": "^5.0.1",
+    "@fontsource/silkscreen": "^5.0.1",
     "@latticexyz/common": "2.0.0-alpha.1.183+07a99974",
     "@latticexyz/dev-tools": "2.0.0-alpha.1.183+07a99974",
     "@latticexyz/network": "2.0.0-alpha.1.183+07a99974",

@@ -1,12 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>a minimal MUD client</title>
-  </head>
-  <body>
-    <div id="react-root"></div>
-    <script type="module" src="/src/index.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MUD PIE</title>
+</head>
+<style>
+  body {
+    background-color: #70543e;
+    font-family: 'Silkscreen', sans-serif;
+    margin: 20px;
+  }
+
+  .hc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-between;
+    width: 100%;
+  }
+
+  .header {
+    font-family: 'Homemade Apple', sans-serif;
+    color: white;
+    font-weight: bold;
+    margin: 0 !important;
+    font-size: 30px;
+  }
+
+  .header h1 {
+    margin: 0px;
+    line-height: 90px;
+  }
+
+  .subheader {
+    color: white;
+  }
+
+  input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #70543e;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  input[type=file] {
+    display: none;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #70543e;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  button {
+    /* remove default behavior */
+    appearance: none;
+    -webkit-appearance: none;
+
+    /* usual styles */
+    padding: 10px;
+    border: none;
+    background-color: #3F51B5;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    margin-left: 10px;
+  }
+
+  .claim-form {
+    width: calc(100vw - 640px);
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .claim {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .registry {
+    margin-top: 100px;
+    color: white;
+  }
+
+  .profile-image {
+    margin-right: 20px;
+  }
+</style>
+
+<body>
+  <div id="react-root"></div>
+  <script type="module" src="/src/index.jsx"></script>
+</body>
+
 </html>
