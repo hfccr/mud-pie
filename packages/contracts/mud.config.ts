@@ -12,6 +12,16 @@ export default mudConfig({
         owner: "address",
         item: 'uint32'
       }
+    },
+    MudPie: {
+      keySchema: {
+        name: "bytes32"
+      },
+      schema: {
+        owner: "address",
+        ttl: "uint64",
+        about: "string"
+      }
     }
   },
 });

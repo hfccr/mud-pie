@@ -5,3 +5,4 @@ pragma solidity >=0.8.0;
 
 import { Counter, CounterTableId } from "./tables/Counter.sol";
 import { BalanceTable, BalanceTableTableId } from "./tables/BalanceTable.sol";
+import { MudPie, MudPieData, MudPieTableId } from "./tables/MudPie.sol";

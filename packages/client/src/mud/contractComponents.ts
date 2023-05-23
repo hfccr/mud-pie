@@ -35,5 +35,22 @@ export function defineContractComponents(world: World) {
         }
       );
     })(),
+    MudPie: (() => {
+      const tableId = new TableId("", "MudPie");
+      return defineComponent(
+        world,
+        {
+          owner: RecsType.String,
+          ttl: RecsType.BigInt,
+          about: RecsType.String,
+        },
+        {
+          metadata: {
+            contractId: tableId.toHexString(),
+            tableId: tableId.toString(),
+          },
+        }
+      );
+    })(),
   };
 }
